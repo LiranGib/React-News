@@ -10,7 +10,9 @@ class News extends Component {
         }
     }
     componentDidMount(){
-        const url = 'https://newsapi.org/v2/top-headlines?sources=google-news-is&apiKey=b3b5c70300cc47058190a5fddc9e6687'
+        const url = 
+            'https://newsapi.org/v2/everything?q=bitcoin&apiKey=b3b5c70300cc47058190a5fddc9e6687'
+            
 
         fetch(url)
             .then((res) =>{
@@ -32,9 +34,11 @@ class News extends Component {
     }
     render(){
         return(
-            <ul>
-                {this.renderItems()}
-            </ul>
+            <div className="news-list">
+                <div className = "news-list_wrapper" >
+                    {this.renderItems()}
+                </div>
+            </div>
         )
     }
 }
