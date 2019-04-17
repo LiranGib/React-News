@@ -35,7 +35,7 @@ class News extends Component {
     render(){
         return(
             <div>
-                <h1 className="news-header">Top Headlines From All Around The World</h1>
+                <h1 className="news-header">Top Headlines Around The World</h1>
                 <div className="news-list">
                     <div className = "news-list_wrapper" >
                         {this.renderItems()}

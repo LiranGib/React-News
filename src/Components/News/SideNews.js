@@ -34,9 +34,9 @@ class SideNews extends Component {
     render(){
         return(
             <div>
-                <h1 className="news-header">Top headlines</h1>
+                <h1 className="sideNews-header">Top headlines</h1>
                 <div className="news-list">
-                    <div className = "news-list_wrapper" >
+                    <div className = "sideNews-list_wrapper" >
                         {this.renderItems()}
                     </div>
                 </div>
